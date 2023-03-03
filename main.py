@@ -18,4 +18,4 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    socketio.run(app,allow_unsafe_werkzeug=True,port=8000)
+    socketio.run(app,allow_unsafe_werkzeug=True,port=5000)
