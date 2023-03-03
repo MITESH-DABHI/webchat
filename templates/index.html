@@ -16,7 +16,7 @@
     <button id="sendBtn">Send</button>
     <script type="text/javascript">
         $(document).ready( function(){
-            var socket = io.connect("https://0.0.0.0:5000")
+            var socket = io.connect("https://webchat-w3se.onrender.com/")
             socket.on("connect",function(){
                 socket.send("User Connected!");
                 
