@@ -16,7 +16,7 @@
     <button id="sendBtn">Send</button>
     <script type="text/javascript">
         $(document).ready( function(){
-            var socket = io.connect("https://mitesh-dabhi-zany-xylophone-96j9qpx7759c94xv-5000.preview.app.github.dev/")
+            var socket = io.connect("tcp://0.0.0.0:5000")
             socket.on("connect",function(){
                 socket.send("User Connected!");
                 
